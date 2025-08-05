@@ -1,8 +1,7 @@
-num=[2,7,11,15]
-target=int(input("Enter the target: "))
+def two_sum(nums, target):
+    for i in range(len(nums)):
+        for j in range(i+1,len(nums)):
+            if nums[i]+nums[j]==target:
+                print(f"[{i},{j}]")
 
-for i in range(len(num)):
-    for j in range(i+1,len(num)):
-        if num[i]+num[j]==target:
-            print([i,j])
-
+two_sum([2,7,11,15],9)
